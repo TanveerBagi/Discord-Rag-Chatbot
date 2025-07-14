@@ -3,12 +3,12 @@ from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunct
 from docx import Document
 import os
 
-client = chromadb.PersistentClient(path='C:/Users/tanve/PycharmProjects/Discord Rag Chatbot/database_storage')
+client = chromadb.PersistentClient(path='database_directory_location_with_name')  #Enter the directory location where you want to store the database(tip:-for easier file handling enter the same directory location as the project)
 collection = client.get_or_create_collection(
                     name = 'chatbot_data',
                     embedding_function=SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2"))
 
-docx_folder = "C:/Users/tanve/Documents/documents for chromadb"
+docx_folder = "directory_where_the_documents_for_training_are_stored" #Enter the directory location for the training file folder (files should be in docx format)
 documents= []
 ids = []
 metadatas = []
@@ -63,9 +63,6 @@ if documents:
     )
 
 
-print("everything happened successfully")
-
-
 def retrieved_text(query):
     results = collection.query(
         query_texts=[query],
@@ -80,3 +77,4 @@ def retrieved_text(query):
         ])
         return combined_context
 
+print("everything happened successfully")
