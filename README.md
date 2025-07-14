@@ -22,8 +22,19 @@ A smart Discord chatbot that uses Retrieval-Augmented Generation (RAG) to answer
 
 ## 📂 Project Structure
 
-<pre> ``` Discord-RAG-Chatbot/ ├── main.py # Discord bot handler ├── llm.py # RAG logic: retrieval + LLM response ├── database.py # Document parsing & vector DB storage ├── observability_metrics.py # Prometheus metrics ├── requirements.txt # Project dependencies ├── logs/ # Logging output └── documents/ # DOCX files for knowledge base ``` </pre>
-
+<details> <summary>📁 Project Structure</summary>
+bash
+Copy
+Edit
+Discord-RAG-Chatbot/
+├── main.py                  # Discord bot handler
+├── llm.py                   # RAG logic: retrieval + LLM response
+├── database.py              # Document parsing & vector DB storage
+├── observability_metrics.py# Prometheus metrics
+├── requirements.txt         # Project dependencies
+├── logs/                    # Logging output
+└── documents/               # DOCX files for knowledge base
+</details>
 
 ---
 
@@ -96,10 +107,8 @@ http://localhost:8000/metrics
 
 These metrics can be scraped by Prometheus and visualized using Grafana or another dashboard tool.
 
-##🧾 Logging
+## 🧾 Logging
 Logs help track application health and debugging information. This project uses the logging module along with rich for colorful console logs.
-
-## 📁 Log Details
 All logs are written to:
 logs/chatbot.log
 
