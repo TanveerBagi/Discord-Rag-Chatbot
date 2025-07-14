@@ -21,11 +21,7 @@ A smart Discord chatbot that uses Retrieval-Augmented Generation (RAG) to answer
 - LLM returns a complete, context-aware answer.
 
 ## 📂 Project Structure
-
-<details> <summary>📁 Project Structure</summary>
-bash
-Copy
-Edit
+```
 Discord-RAG-Chatbot/
 ├── main.py                  # Discord bot handler
 ├── llm.py                   # RAG logic: retrieval + LLM response
@@ -34,8 +30,7 @@ Discord-RAG-Chatbot/
 ├── requirements.txt         # Project dependencies
 ├── logs/                    # Logging output
 └── documents/               # DOCX files for knowledge base
-</details>
-
+```
 ---
 
 ## 🔧 Setup Instructions
