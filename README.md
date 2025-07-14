@@ -87,7 +87,7 @@ python main.py
 ```
 
 ### 10. Interact on Discord
-#Nexus <your question>
+#Nexus your question
 
 ## 📊 Observability Metrics
 This project uses Prometheus to monitor and expose key application metrics via an HTTP endpoint.
