@@ -1,0 +1,9 @@
+openai
+discord.py
+chromadb
+sentence_transformers
+hf_xet
+onnx
+python-docx
+rich
+prometheus_client
