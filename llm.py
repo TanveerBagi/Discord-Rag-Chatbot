@@ -6,7 +6,7 @@ from Observability_metrics import QUERY_COUNT, QUERY_TIME
 
 
 client = openai.OpenAI(
-    api_key="sk-gSdp9lNxQ8iPB2VUYOB7DF0Kkx1pi4toasRreNoNEul7hRigfFMNo90t/jFcNp0uCUZkFmUgEFU81madjiwwhF6EMwkKnJXLFmQt3NKo3wg=",
+    api_key="requesty_api_key", #Enter the api key from requesty here
     base_url="https://router.requesty.ai/v1"
 )
 
